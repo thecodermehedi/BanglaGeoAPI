@@ -3,23 +3,26 @@ import helmet from "helmet";
 import morgan from "morgan";
 import compression from "compression";
 import cors from "cors";
-import path from "path";
+import mongoose from "mongoose";
 
 const app = express();
 
-// Middlewares
 app.use(helmet());
-app.use(morgan("combined")); // Logging
-app.use(compression()); // Compresses response bodies
-app.use(cors()); // Enable CORS
-app.use(express.json()); // Parses JSON bodies
-app.use(express.urlencoded({ extended: true })); // Parses URL-encoded bodies
+app.use(morgan("combined"));
+app.use(compression());
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// Static files
-app.use(express.static(path.join(__dirname, "public")));
+const mongoURI = process.env.MONGO_URI || "mongodb://localhost:27017/bdgeoapi";
+
+mongoose
+  .connect(mongoURI)
+  .then(() => console.log("MongoDB connected successfully"))
+  .catch((err) => console.error("MongoDB connection error:", err));
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello, world!");
+  res.send("Hello and welcome to the API");
 });
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
