@@ -1,6 +1,15 @@
 <h1 align="center">BanglaGeoApi</h1>
 <p align="left">BanglaGeoAPI is an open-source API project designed to provide geo location data for Bangladesh. It serves data on administrative divisions, districts, upazilas, unions, thanas, villages, and more. The API is built using TypeScript and Node.js, leveraging Express.js for routing and Mongoose ODM for seamless interaction with MongoDB.</p>
 
+### Run the project
+
+**Development**
+`npm run dev`
+
+**Production**
+`npm run build`
+`npm start`
+
 ### Features
 
 - **Comprehensive Data**: Includes detailed information on Bangladesh's administrative hierarchy.
