@@ -19,7 +19,7 @@
 
 ### Getting Started
 
-To get started with BanglaGeoAPI, clone the repository and follow the setup instructions in the [CONTRIBUTION](CONTRIBUTION.md) file. Contributions and feedback are welcome!
+To get started with BanglaGeoAPI, clone the repository and follow the setup instructions in the [CONTRIBUTION](CONTRIBUTING.md) file. Contributions and feedback are welcome!
 
 ### License
 
