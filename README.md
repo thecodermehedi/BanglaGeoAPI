@@ -24,3 +24,18 @@ To get started with BanglaGeoAPI, clone the repository and follow the setup inst
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+<!-- Todo: .github/workflows/ci.yml (optional, for CI/CD)
+
+GitHub Actions workflow for continuous integration and/or deployment.
+Example jobs: Build, test, and deploy on push to main branch.
+jest.config.js or mocha.opts (for testing)
+
+Configuration file for Jest (for unit testing) or Mocha (for testing framework).
+Example settings: Test environment, setup files, coverage thresholds.
+dockerfile and docker-compose.yml (optional, for Docker)
+
+Dockerfile defines how to build the Docker image.
+docker-compose.yml specifies services, networks, and volumes for local development or deployment.
+
+ -->
