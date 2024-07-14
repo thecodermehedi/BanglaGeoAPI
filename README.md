@@ -10,6 +10,38 @@
 `npm run build`
 `npm start`
 
+### Available APIs
+
+#### Get Divisions
+
+- **URL:** `/api/v1/divisions`
+- **Method:** `GET`
+- **Description:** Retrieve a list of all divisions.
+
+#### Get Districts
+
+- **URL:** `/api/v1/districts`
+- **Method:** `GET`
+- **Description:** Retrieve a list of all districts.
+
+#### Get Upazilas
+
+- **URL:** `/api/v1/upazilas`
+- **Method:** `GET`
+- **Description:** Retrieve a list of all upazilas.
+
+#### Get Unions
+
+- **URL:** `/api/v1/unions`
+- **Method:** `GET`
+- **Description:** Retrieve a list of all unions.
+
+#### Get Districts by Division Id
+
+- **URL:** `/api/v1/districts/:divisionId`
+- **Method:** `GET`
+- **Description:** Retrieve a list of districts under a division.
+
 ### Features
 
 - **Comprehensive Data**: Includes detailed information on Bangladesh's administrative hierarchy.

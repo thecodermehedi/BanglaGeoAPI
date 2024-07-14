@@ -18,7 +18,8 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "seed": "ts-node src/seed/seed.ts"
   },
   "dependencies": {
     "@types/mongoose": "^5.11.97",

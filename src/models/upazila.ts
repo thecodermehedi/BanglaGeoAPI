@@ -3,9 +3,9 @@ import mongoose, { Document, Schema } from "mongoose";
 interface IUpazila extends Document {
   id: string;
   district_id: string;
-  rdx_id: string;
+  rdx_id?: string;
   name: string;
-  bn_name: string;
+  bn_name?: string;
   url?: string;
 }
 
@@ -13,9 +13,9 @@ const upazilaSchema = new Schema<IUpazila>(
   {
     id: { type: String, required: true, unique: true },
     district_id: { type: String, required: true },
-    rdx_id: { type: String, required: true },
+    rdx_id: { type: String },
     name: { type: String, required: true },
-    bn_name: { type: String, required: true },
+    bn_name: { type: String },
     url: { type: String },
   },
   { _id: false }
