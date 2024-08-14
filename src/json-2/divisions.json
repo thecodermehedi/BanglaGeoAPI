@@ -1,0 +1,57 @@
+[
+  {
+    "type": "table",
+    "name": "divisions",
+    "total": 8,
+    "data": [
+      {
+        "id": "1",
+        "name": "Chattogram",
+        "bn_name": "চট্টগ্রাম",
+        "url": "https://chittagongdiv.gov.bd"
+      },
+      {
+        "id": "2",
+        "name": "Rajshahi",
+        "bn_name": "রাজশাহী",
+        "url": "https://rajshahidiv.gov.bd"
+      },
+      {
+        "id": "3",
+        "name": "Khulna",
+        "bn_name": "খুলনা",
+        "url": "https://khulnadiv.gov.bd"
+      },
+      {
+        "id": "4",
+        "name": "Barishal",
+        "bn_name": "বরিশাল",
+        "url": "https://barishaldiv.gov.bd/"
+      },
+      {
+        "id": "5",
+        "name": "Sylhet",
+        "bn_name": "সিলেট",
+        "url": "https://sylhetdiv.gov.bd"
+      },
+      {
+        "id": "6",
+        "name": "Dhaka",
+        "bn_name": "ঢাকা",
+        "url": "https://dhakadiv.gov.bd"
+      },
+      {
+        "id": "7",
+        "name": "Rangpur",
+        "bn_name": "রংপুর",
+        "url": "https://rangpurdiv.gov.bd"
+      },
+      {
+        "id": "8",
+        "name": "Mymensingh",
+        "bn_name": "ময়মনসিংহ",
+        "url": "https://mymensinghdiv.gov.bd"
+      }
+    ]
+  }
+]
