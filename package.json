@@ -1,11 +1,21 @@
 {
   "name": "banglageoapi",
-  "module": "src/index.ts",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">BanglaGeoApi</h1>\r <p align=\"left\">BanglaGeoAPI is an open-source API project designed to provide geo location data for Bangladesh. It serves data on administrative divisions, districts, upazilas, unions, thanas, villages, and more. The API is built using TypeScript and Node.js, leveraging Express.js for routing and Mongoose ODM for seamless interaction with MongoDB.</p>",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4"
   }
 }

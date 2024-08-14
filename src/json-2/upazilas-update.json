@@ -1,8 +1,4 @@
-{
-    "type": "table",
-    "name": "upazilas",
-    "total": 603,
-    "data": [
+[
         {
             "id": "1",
             "district_id": "1",
@@ -4828,4 +4824,3 @@
             "url": "sadar.gazipur.gov.bd"
         }
     ]
-}

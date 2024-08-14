@@ -1,9 +1,4 @@
-[
-  {
-    "type": "table",
-    "name": "districts",
-    "total": 64,
-    "data": [
+ [
       {
         "id": "1",
         "division_id": "1",
@@ -581,5 +576,3 @@
         "url": "https://netrokona.gov.bd"
       }
     ]
-  }
-]

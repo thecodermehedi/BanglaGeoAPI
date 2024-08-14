@@ -1,8 +1,4 @@
-{
-    "type": "table",
-    "name": "unions",
-    "total": 4540,
-    "data": [
+[
         {
             "id": "1",
             "upazilla_id": "1",
@@ -36320,4 +36316,3 @@
             "url": "kaliaragabragatiup.netrokona.gov.bd"
         }
     ]
-}
