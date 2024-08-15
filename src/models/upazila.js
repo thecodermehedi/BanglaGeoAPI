@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 
 const UpazilaSchema = new mongoose.Schema({
-  id: { type: Number, require: true, unique: true },
-  district_id: { type: mongoose.Schema.Types.ObjectId, ref: 'District'},
-  rdx_id: { type: Number},
+
+  id: { type: String, require: true, unique: true },
+  district_id: { type: String, ref: 'District'},
+  rdx_id: { type: String},
   name: { type: String},
   bn_name: { type: String },
   url: { type: String },

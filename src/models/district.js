@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 
 const DistrictSchema = new mongoose.Schema({
-  id: { type: Number, require: true, unique: true },
-  division_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Division'},
+
+  id: { type: String, require: true, unique: true },
+  division_id: { type: Number, ref: 'Division'},
   name: { type: String},
   bn_name: { type: String },
-  lat: { type: Number },
-  lon: { type: Number },
+  lat: { type: String },
+  lon: { type: String },
   url: { type: String },
 });
 

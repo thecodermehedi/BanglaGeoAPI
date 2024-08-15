@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const District = require("../models/district");
+const Division = require('../models/division'); 
 // Create a new district
 router.post("/", async (req, res) => {
   try {
@@ -16,8 +17,28 @@ router.post("/", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const districts = await District.find().populate("division");
-    res.status(200).json(districts);
+    const divisionIds = [...new Set(districts.map(district => district.division_id))];
+    const divisions = await Division.find({ id: { $in: divisionIds } });
+    const divisionMap = divisions.reduce((map, division) => {
+      map[division.id] = division.name;
+      return map;
+    }, {});    
+
+    const formattedDistricts = districts.map(district => ({
+      _id: district._id,
+      id: district.id,
+      name: district.name,
+      bn_name: district.bn_name,
+      division_id: district.division_id,
+      division_name: divisionMap[district.division_id] || null, // Use the map to get the division name
+      lat: district.lat,
+      lon: district.lon,
+      url: district.url
+    }));
+        
+    res.status(200).json(formattedDistricts);
   } catch (error) {
+    console.error('Error fetching districts:', error); // Log detailed error
     res.status(500).json({ error: error.message });
   }
 });

@@ -22,6 +22,9 @@ app.use("/api/districts", require("./routes/districts"));
 app.use("/api/upazilas", require("./routes/upazilas"));
 app.use("/api/unions", require("./routes/unions"));
 
+app.use("/api/test2s", require("./routes/test2s"));
+app.use("/api/tests", require("./routes/tests"));
+
 // Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
